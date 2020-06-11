@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+ h2 {
+     color: blueviolet;
+     text-align: center;
+     
+ }
+ .row {
+     width: 100%;
+     
+ }
+
+ section {
+     border: 2px solid black;
+     margin: auto;
+     width: 50%;
+     height: 40px;
+ }
+ 
