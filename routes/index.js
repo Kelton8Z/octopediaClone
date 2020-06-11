@@ -8,7 +8,7 @@ app.set("views", path.join(__dirname, "views"));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.sendFile('home/site/wwwroot/views/index.html');
+    res.sendFile(__dirname+'/views/index.html');
     //  res.render('index', { title: 'alex' });
 });
 
