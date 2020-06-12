@@ -6,7 +6,7 @@ const app = express();
 app.set("view engine","pug");
 app.set("views", path.join(__dirname, "views"));
 
-app.post("../views/index.html", (req, res) => {
+app.post("/create-action", (req, res) => {
   // Do Something in Node here
     console.log("You went" + req.fname);
     res.send("You searched " + req.fname);
