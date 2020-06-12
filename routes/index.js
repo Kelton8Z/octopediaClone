@@ -11,6 +11,7 @@ app.post("/create-action", (req, res) => {
     console.log("You went" + req.fname);
     res.send("You searched " + req.fname);
     console.log("You searched " + req.fname);
+    res.redirect("/");
 });
 
 /* GET home page. */
