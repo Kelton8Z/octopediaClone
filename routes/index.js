@@ -6,6 +6,13 @@ const app = express();
 app.set("view engine","pug");
 app.set("views", path.join(__dirname, "views"));
 
+app.post("../views/index.html", (req, res) => {
+  // Do Something in Node here
+    console.log("You went" + req.fname);
+    res.send("You searched " + req.fname);
+    console.log("You searched " + req.fname);
+});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.sendFile('/home/site/wwwroot/views/index.html');
