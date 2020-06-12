@@ -14,6 +14,10 @@
          <img src="tupian3.png" width="400" height="400" >    
      </p>
      <h2 style="font-size: 300%;"> Hi, how can I help you</h2>
+	 <form class="input-container" v-on:submit="sendMessage">
+			<input type="text" v-model="msg">
+			<button v-on:click="sendMessage" v-bind:disabled="!msg">Send</button>
+		</form>
    </div>
 
    
