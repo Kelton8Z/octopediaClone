@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
 app.post("/create-action", (req, res) => {
   // Do Something in Node here
-    console.log("You went");
+    process.stdout.write("You went");
     res.send("You searched " + req.fname);
     console.log("You searched " + req.fname);
     res.redirect("/");
