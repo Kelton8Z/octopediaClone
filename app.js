@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var actionRouter = require('./routes/action');
+var actionRouter = require('./routes/create-action');
 var app = express();
 
 // view engine setup
