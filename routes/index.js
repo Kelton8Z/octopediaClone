@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
     //  res.render('index', { title: 'alex' });
 });
 
-app.post("/create-action", (req, res) => {
+app.post("/", (req, res) => {
   // Do Something in Node here
     process.stdout.write("You went");
     res.send("You searched " + req.fname);
