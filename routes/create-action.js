@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
 router.post("/", function(req, res,next){
     // Do Something in Node here
       process.stdout.write("You went");
-      res.send("You searched " + req.fname);
-      console.log("You searched " + req.fname);
+      res.send("You searched " + req.params);
+      console.log("You searched " + req.params);
       res.redirect("/");
   });
 
