@@ -13,6 +13,7 @@ router.post("/", function(req, res,next){
       res.send("You searched " + JSON.stringify(req.body));
       console.log("You searched " + JSON.stringify(req.body));
       res.redirect("/");
+      console.log("The type is:"+ (typeof req.body));
   });
 
 module.exports = router;
