@@ -1,4 +1,16 @@
-var createError = require('http-errors');
+var express = require('express');
+var app = express();
+const PORT = 8000;
+
+app.get('/',(req,res) =>
+    res.send('alex dumb')
+);
+
+app.listen(PORT,()=>
+    console.log("running on {PORT}")
+);
+
+/*var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -39,4 +51,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
+*/
