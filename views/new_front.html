@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="chat.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+h2 {
+    text-align: center;
+    color: greenyellow;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+}
+/* p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+} */
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  background-color:lightblue;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    /* padding-top: 66.66% */
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+
+.content {
+    padding: 2px;
+    padding-left: 20px;
+}
+.chat_main {
+    /* float: left; */
+    margin: auto;
+    width: 548px;
+    height: 346px;
+    border: 1px solid seagreen;
+    background-color: white;
+    /* background: url("../img/圣诞.jpg") no-repeat;
+    background-size: cover; */
+}
+ 
+.send_message {
+    width: 548px;
+    height: 65px;
+    /* position: absolute; */
+    bottom: 0px;
+    background: linear-gradient(to top, rgba(9, 216, 237, 0.99), #72cad4);
+}
+ 
+.send_message input[type="text"] {
+    width: 470px;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    text-indent: 2em;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+ 
+.send_message input[type="button"] {
+    border-radius: 0 10px 10px 0;
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    margin-left: 0;
+    background-color: white;
+    border: none;
+    outline: none;
+ 
+}
+ 
+.send_message input[type="button"]:hover {
+    background-color: orangered;
+}
+ 
+.send_message input[type="button"]:active {
+    background-color: #879eee;
+}
+ 
+.chat_namecard {
+    float: left;
+    width: 245px;
+    height: 546px;
+    border: 1px solid saddlebrown;
+    background-color: #f1fea9;
+}
+ 
+ 
+.chat_content ul{
+list-style-type: none;
+}
+.chat_content{
+    overflow: auto;
+    width: 540px;
+    /*设置高度滚动条才有效*/
+    height: 270px;
+}
+.chat_content li{
+    margin-top: 10px;
+    width: 540px;
+    clear: both;
+    display: block;
+ 
+}
+ 
+.chat_content li img{
+    margin: 6px 0 0 0;
+}
+ 
+.chat_content li span {
+    background: #ffd351;
+    padding: 10px;
+    border-radius: 10px;
+    /*最大宽度不能太长，不然布局会混乱*/
+    max-width: 400px;
+    border: 1px solid white;
+    box-shadow: 0 0 3px #879eee;
+    margin: 6px 10px 0 10px;
+    overflow: hidden;
+}
+ 
+.chat_content li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+.chat_content li img.imgleft {
+ margin-left: 10px;
+    float: left;
+}
+ 
+.chat_content li img.imgright {
+ margin-right: 10px;
+    float: right;
+}
+ 
+.chat_content li span.spanleft {
+    float: left;
+}
+ 
+.chat_content li span.spanright {
+    float: right;
+}
+
+.dialogue {
+    /* text-align: center; */
+    margin: auto;
+    /* width: 50%;
+    background-color: red; */
+    width: 40%;
+    border: 2px solid black;
+    /* background-color: red; */
+}
+
+.box {
+  /* min-width: 400px;  */
+  margin: auto; 
+  width: 100%; 
+  /* height: auto; */
+  min-height: 200px;
+  text-align:center;
+  /* background-color: purple; */
+  color: purple;
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+    
+    <p>
+      <div><img src="images/tupian3-removebg.png" width="480" height="240" alt="" class="center"></div>
+      <!-- <img src="images/octo2.png" width="50" height="85" alt="Picture with a quote" class="center"> -->
+    </p>
+    <h1>
+        Hi, how can I help you?
+    </h1>
+    <h2>
+        Talk to OCTOPEDIA
+    </h2>
+    <!-- <section class = "dialogue">
+        <p class = "content">
+            e.g. score conversation
+        </p>
+    </section>
+     -->
+    <!-- <div class="send_message">
+      <form>
+          <input type="text" placeholder="CMU学费多少" id="send_txt">
+          <input type="button" value="Go!" id="send_btn">
+      </form>
+    </div> -->
+    <div class="chat_main">
+      <div class="chat_div">
+          <ul id="chat_ul" class="chat_content">
+
+          </ul>
+
+      </div>
+
+      <div class="send_message">
+          <form>
+              <input type="text" placeholder="Please input your question here" id="send_txt">
+              <input type="button" value="Go" id="send_btn">
+          </form>
+      </div>
+    </div>
+
+    <!-- <section class = "dialogue">
+      <iframe src='https://webchat.botframework.com/embed/octopediaWebBot?s=OM6LDlMCngc.bcw503JKDGABZPTnj7PLa7jD6eimNcuCrrAezWJUmVc'  class=box></iframe>
+    </section> -->
+    <!-- <p>
+        e.g. score conversation
+    </p> -->
+    <!-- <h3>
+        Know more, faster
+    </h3>
+    
+    <h3>
+        Start Searching with Octopedia!
+    </h3> -->
+</div>
+
+
+
+
+</body>
+</html>
