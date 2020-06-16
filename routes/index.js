@@ -8,7 +8,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.sendFile('/home/site/wwwroot/views/new_front.html');
+    res.sendFile('/home/site/wwwroot/views/front_end_2.html');
     //  res.render('index', { title: 'alex' });
 });
 

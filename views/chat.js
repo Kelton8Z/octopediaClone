@@ -1,4 +1,4 @@
-+window.onload = function () {
+window.onload = function () {
     var user = ["../img/img_17.jpg"];
     var num = 1;//判断左右
     var portrait_position = 0;
