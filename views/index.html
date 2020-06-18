@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,19 +12,11 @@
 <div class="row">
    <div style="text-align: center; ">
       <p>
-         <img src="https://i.ibb.co/xCGqvns/tupian3.png" alt="tupian3" width="400" height="400" >    
+         <img src="https://i.ibb.co/xCGqvns/tupian3.png" alt="tupian3" width="300" height="300" >    
      </p>
-     <h2 style="font-size: 300%;"> Hi, how can I help you</h2>
-<!-- 
-	<form action="/create-action" method="post">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" placeholder = "What's your quesiton?"/><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"/><br><br>
-  <input type="submit" value="Submit">
-</form>
--->
-<iframe src='https://webchat.botframework.com/embed/octopediaWebBot?s=OM6LDlMCngc.bcw503JKDGABZPTnj7PLa7jD6eimNcuCrrAezWJUmVc'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+     <h2 style="font-size: 200%;"> Hi, how can I help you?</h2>
+
+<!-- <iframe src='https://webchat.botframework.com/embed/octopediaWebBot?s=OM6LDlMCngc.bcw503JKDGABZPTnj7PLa7jD6eimNcuCrrAezWJUmVc'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
    </div>
      <section>
        <p style="color: white;">
@@ -33,6 +24,51 @@
        </p>
 
      </section>
+</div> -->
+
+
+<!-- <div id="bot"/>
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+  <script>
+    BotChat.App({
+      directLine: { secret: 'lnAc0Bu571c.0beYsq4xvN3SvPcUlkyMQ0t1BiD2zVD62gMFodr5lLw' },
+      user: { id: 'userid' },
+      bot: { id: 'octopediaWebBot' },
+      resize: 'detect'
+    }, document.getElementById("bot"));
+  </script>
+</div> -->
+<div class="headerBar">
+  <div class="user-photo"><img src="https://i.ibb.co/xCGqvns/tupian3.png"></div>
+  <p class="title">Octopedia</p>
 </div>
+<div class="chatbox">
+
+  <div class="chatlogs">
+  
+      <div class="chat friend">
+          <div class="user-photo"><img src="https://i.ibb.co/xCGqvns/tupian3.png"></div>
+          <p class="chat-message">Hello!</p>
+      </div>
+
+      <div class="chat friend" id="loadingGif" style="display: none;">
+          <div class="user-photo"><img src="Images/ana.JPG"></div>
+          <div class="gif"><img src="Images/loading.gif"></div>
+      </div>
+
+  </div>            
+</div>
+<div class="chat-form">
+  <div id="inputDiv">
+      <div id="buttonDiv"></div>
+      <textarea class="input" placeholder="Message" rows="1" data-min-rows='1'></textarea>
+  </div>
+  <div id="chat-form-buttons">
+      <input type ="image"id="rec" src="Images/microphone.png">
+      <input type="image" src="Images/keyboard.png" id="switchInputType"/>
+  </div>
+</div>
+
 </body>
 
+</html>
