@@ -238,7 +238,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-  <script type="text/javascript" src="/home/site/wwwroot/views/chat_bot_credentials.js"></script>
   <title>Main Page</title>
 </head>
 <body>
@@ -305,6 +304,33 @@
 <!--- trying to connect to script that controls actions-->
 <!-- <script type="text/javascript" src="chat_bot_script.js"></script>   -->
 <script>
+// Datanautix help bot
+//var accessToken = "b56ec2c85b2744ad81aeb6518d30a6ae";
+
+    //----------------------- Emoji Bot ----------------------- //
+    var credentialsAccessToken ="5ae7adf062fa4b5692087da997d2e3a5";
+
+    //var bot name is used for the firebase database
+    var credentialsBotName = "Emoji Bot";
+
+
+    // // HighSchoolAna(Dev)
+    // var credentialsAccessToken = "5489544adf6d490c8438cb7377f4bd60"
+
+    // var credentialsBotName = "High School Ana (Dev)"
+
+
+    var credentialsBaseUrl = "https://api.api.ai/v1/";
+
+    // Initialize Firebase
+    var credentialsConfig = {
+        apiKey: "AIzaSyBV5PiUUxluc5ISR2hcItUH0T7HEH6_ENo",
+        authDomain: "chatinterfacedb.firebaseapp.com",
+        databaseURL: "https://chatinterfacedb.firebaseio.com",
+        projectId: "chatinterfacedb",
+        storageBucket: "chatinterfacedb.appspot.com",
+        messagingSenderId: "922251038710"
+    };
   //---------------------------------- Credentials Section ----------------------------------//
 // All credentials come from credentials.js which isnt on github
 
