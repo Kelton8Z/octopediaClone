@@ -17,11 +17,13 @@
     var credentialsBaseUrl = "https://api.api.ai/v1/";
 
     // Initialize Firebase
-    var credentialsConfig = {
-        apiKey: "AIzaSyBV5PiUUxluc5ISR2hcItUH0T7HEH6_ENo",
-        authDomain: "chatinterfacedb.firebaseapp.com",
-        databaseURL: "https://chatinterfacedb.firebaseio.com",
-        projectId: "chatinterfacedb",
-        storageBucket: "chatinterfacedb.appspot.com",
-        messagingSenderId: "922251038710"
-    };
+var credentialsConfig = {
+    apiKey: "AIzaSyBAYYxqOoGNMr5j7b3PPgfrl__oE_z10D4",
+    authDomain: "octopedia-d510a.firebaseapp.com",
+    databaseURL: "https://octopedia-d510a.firebaseio.com",
+    projectId: "octopedia-d510a",
+    storageBucket: "octopedia-d510a.appspot.com",
+    messagingSenderId: "650307829248",
+    appId: "1:650307829248:web:2c44557750d0c36c3f22e5",
+    measurementId: "G-M3NR6CZFNH"
+  };
