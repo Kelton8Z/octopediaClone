@@ -504,7 +504,8 @@ function send(text) {
 
 		},
 		error: function() {
-			newRecievedMessage("Internal Server Error");
+		    console.log(JSON.stringify(error));
+            newRecievedMessage("Internal Server Error");
 		}
 	});
 }
