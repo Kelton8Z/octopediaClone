@@ -320,7 +320,8 @@
     // var credentialsBotName = "High School Ana (Dev)"
 
 
-    var credentialsBaseUrl = "https://octopediaqna.azurewebsites.net/qnamaker";
+    var credentialsBaseUrl = "https://directline.botframework.com"; 
+    //"https://octopediaqna.azurewebsites.net/qnamaker";
 
     // Initialize Firebase
     var credentialsConfig = {
@@ -504,7 +505,6 @@ function send(text) {
 
 		},
 		error: function() {
-		    console.log(JSON.stringify(error));
             newRecievedMessage("Internal Server Error");
 		}
 	});
