@@ -14,7 +14,7 @@
     // var credentialsBotName = "High School Ana (Dev)"
 
 
-    var credentialsBaseUrl = "https://api.api.ai/v1/";
+    var credentialsBaseUrl = "https://directline.botframework.com";
 
     // Initialize Firebase
 var credentialsConfig = {
