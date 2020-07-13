@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "ch">
+<head>
+	<!--meta tags-->
+	<meta charset = "utf-8">
+	<meta name = "sign up" content="width=device-width" initial-scale="1">
+
+	<!--style-->
+	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.min.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "../css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/validate.css"/>
+	<link rel = "stylesheet" type = "text/css" href =
+			"http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<title>注册章鱼留学账号</title>
+</head>
+
+<body>
+
+<!--javascript-->
+<script type = "text/javascript" src = "../js/jquery-1.12.4.min.js"></script>
+<script type = "text/javascript" src = "../js/jquery.validate.js"></script>
+<script type = "text/javascript" src = "../js/bootstrap.min.js"></script>
+<script type = "text/javascript" src="../js/validation.js"></script>
+<script type="text/javascript" src="../js/jquery.mockjax.min.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<div class = "container-fluid">
+
+	<!--logo+title-->
+	<div class = "my_title row mx-auto">
+		<div class = "span4 ml-4">
+			<img src = "../logo_small.png" alt = ""  class="ml-3">
+		</div>
+		<div class = "span4 mt-5">
+			<h1 class = "text-left font-weight-bold">章鱼留学问问</h1>
+		</div>
+	</div>
+
+
+	<div class = "my_login row mx-auto">
+		<div class = "col form-size">
+			<div class = "row mt-2 mb-5">
+
+				<!--log in/ signup-->
+				<div class = "text-center span4">
+					<button id = "loginBtn" type = "button" class = "btn btn-sign-log" onclick = "location.href='login.html'">登录
+					</button>
+				</div>
+				<div class = "text-center span4">
+					<button id = "signUpBtn" type = "button" class = "curr_choice btn btn-sign-log" onclick = "location.reload()">
+						注册
+					</button>
+				</div>
+			</div>
+
+			<!--"Octopedia_Users.asp" -->
+			<form action = "#" method = "post" id="sign_up_form">
+				<!--user-->
+				<div class = "row mb-4 mt-2">
+					<div class = "form-inline form-size">
+						<label for = "username"></label>
+						<i class="fa fa-user fa-lg ml-3 col-2 text-center"></i>
+						<input type = "text" class = "form-control col-7" placeholder = "用户名" name =
+								"username" id = "username">
+					</div>
+				</div>
+
+				<!--password-->
+				<div class = "row mb-4 form-size">
+					<div class = "form-inline form-size">
+						<label for = "password"></label>
+						<i class="fa fa-lock fa-lg ml-3 col-2 text-center"></i>
+						<input type = "password" class = "form-control col-7" placeholder = "密码" name =
+								"password" id = "password">
+					</div>
+				</div>
+
+				<!--phone-->
+				<div class = "row  mb-4">
+					<div class = "form-inline form-size">
+						<label for = "phoneNumber"></label>
+						<i class="fa fa-phone fa-lg ml-3 col-2 text-center"></i>
+						<input type = "tel" class = "form-control col-7" placeholder = "手机号" name =
+								"phoneNumber" id = "phoneNumber">
+					</div>
+				</div>
+
+				<!--captcha-->
+				<div class = "row  mb-5">
+					<div class = "form-inline form-size">
+						<label for = "captcha"></label>
+						<button id="sendCaptchaBtn" type="button" class="btn col-4 ml-2 mr-2 send_code" onclick="sendCode()">发送验证码</button>
+						<input type = "text" class = "form-control col-5" placeholder = "请输入验证码" name =
+								"captcha" id = "captcha">
+					</div>
+				</div>
+
+				<!--submit-->
+				<div class = "row mb-5 mt-5">
+					<div class = "mx-auto col">
+						<button id = "signupButton" type = "submit" class = "btn btn-block btn-submit">注册</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

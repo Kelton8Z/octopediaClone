@@ -1,0 +1,87 @@
+body {
+    background: rgba(94, 47, 207, 0.1);
+    background-size: cover;
+    font-size: 16px;
+}
+
+.my_title {
+    width: 400px;
+    margin-top: 70px;
+}
+
+.my_login {
+    width: 400px;
+    margin-top: 10px;
+    color: white;
+    background: rgba(94, 47, 207, 0.6);
+}
+
+.form-size {
+    width: 400px;
+}
+
+input[type="text"], input[type="password"] {
+    padding-left: 10px;
+}
+
+h1 {
+    color: cadetblue;
+    font-family: "Kaiti SC", Arial, fantasy;
+}
+h2{
+    font-family: "Kaiti SC", Arial, fantasy;
+}
+
+.title_img {
+    float: left;
+    width: 400px;
+}
+
+.btn-sign-log {
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    width: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    font-family: "Kaiti SC", Arial, fantasy;
+}
+
+.btn:hover {
+    color: wheat;
+}
+
+.curr_choice {
+    border-bottom: solid 2px white;
+    padding: 3px;
+    width: 120px;
+}
+
+.btn-submit {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: dimgray;
+}
+
+.btn-submit:hover {
+    color: black;
+}
+
+.my_footer {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.fa {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.send_code{
+    color: white;
+    text-decoration-line: underline;
+    font-style: oblique;
+}

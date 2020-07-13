@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang = "ch">
+<head>
+	<!--meta tags-->
+	<meta charset = "utf-8">
+	<meta name = "login" content = "width=device-width" initial-scale = 1>
+
+	<!--style-->
+	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.min.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "../css/login.css"/>
+
+	<title>章鱼留学</title>
+</head>
+
+<body>
+
+<!--javascript-->
+<script type = "text/javascript" src = "../js/jquery-1.12.4.min.js"></script>
+<script type = "text/javascript" src = "../js/bootstrap.min.js"></script>
+<script type = "text/javascript" src = "../js/jquery.validate.js"></script>
+
+<div class = "container-fluid">
+
+	<!--logo+title-->
+	<div class = "my_title row mx-auto">
+		<div class = "span4 ml-4">
+			<img src = "../logo_small.png" alt = "" class = "ml-3">
+		</div>
+		<div class = "span4 mt-5">
+			<h1 class = "text-left font-weight-bold">章鱼留学问问</h1>
+		</div>
+	</div>
+
+
+	<div class = "my_login row mx-auto">
+		<div class = "col form-size">
+			<div class = "row mt-2 mb-5">
+
+				<!--log in/ signup-->
+				<div class = "text-center span4">
+					<button id = "loginBtn" type = "button" class = "curr_choice btn btn-sign-log" onclick = "location.reload()">
+						登录
+					</button>
+				</div>
+				<div class = "text-center span4">
+					<button id = "signUpBtn" type = "button" class = "btn btn-sign-log" onclick = "location.href='signup.html'">注册
+					</button>
+				</div>
+			</div>
+
+			<!--"Octopedia_Users.asp" -->
+			<form action = "chatbot.html" method = "post">
+				<!--user-->
+				<div class = "row mb-5 mt-2">
+					<div class = "span4 col-1 ml-2">
+						<img src = "../icons/user.svg" alt = "" width = "32" title = "User">
+					</div>
+					<div class = "span4 col-10 ml-2">
+						<input type = "text" class = "form-control" placeholder = "用户名或手机号" name =
+								"username" id = "username">
+					</div>
+				</div>
+
+				<!--password-->
+				<div class = "row  mb-5 mt-2">
+					<div class = "span4 col-1 ml-2">
+						<img src = "../icons/password.svg" alt = "" width = "32" title = "Password">
+					</div>
+					<div class = "span4 col-10 ml-2">
+						<input type = "password" class = "form-control" placeholder = "密码" name =
+								"password" id = "password">
+					</div>
+				</div>
+
+				<!--submit-->
+				<div class = "row mb-2">
+					<div class = "mx-auto col">
+						<button id = "loginButton" type = "submit" class = "btn btn-block btn-submit">登录
+						</button>
+					</div>
+				</div>
+			</form>
+
+			<footer class = "mb-4 form-size my_footer">
+				<a href = "findPassword.html" class = "font-weight-light">
+					忘记密码
+				</a>
+			</footer>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
