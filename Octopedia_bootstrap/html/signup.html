@@ -3,7 +3,6 @@
 <head>
 	<!--meta tags-->
 	<meta charset = "utf-8">
-	<meta name = "sign up" content="width=device-width" initial-scale="1">
 
 	<!--style-->
 	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.min.css"/>
@@ -28,11 +27,11 @@
 
 	<!--logo+title-->
 	<div class = "my_title row mx-auto">
-		<div class = "span4 ml-4">
-			<img src = "../logo_small.png" alt = ""  class="ml-3">
+		<div class = "col-12 text-center">
+			<img src = "../logo_small.png" alt = "" class = "ml-3">
 		</div>
-		<div class = "span4 mt-5">
-			<h1 class = "text-left font-weight-bold">章鱼留学问问</h1>
+		<div class = "col-12 text-center">
+			<h1 class = "font-weight-bold">章鱼留学问问</h1>
 		</div>
 	</div>
 
@@ -60,7 +59,7 @@
 					<div class = "form-inline form-size">
 						<label for = "username"></label>
 						<i class="fa fa-user fa-lg ml-3 col-2 text-center"></i>
-						<input type = "text" class = "form-control col-7" placeholder = "用户名" name =
+						<input type = "text" class = "form-control col-8" placeholder = "用户名" name =
 								"username" id = "username">
 					</div>
 				</div>
@@ -70,7 +69,7 @@
 					<div class = "form-inline form-size">
 						<label for = "password"></label>
 						<i class="fa fa-lock fa-lg ml-3 col-2 text-center"></i>
-						<input type = "password" class = "form-control col-7" placeholder = "密码" name =
+						<input type = "password" class = "form-control col-8" placeholder = "密码" name =
 								"password" id = "password">
 					</div>
 				</div>
@@ -80,7 +79,7 @@
 					<div class = "form-inline form-size">
 						<label for = "phoneNumber"></label>
 						<i class="fa fa-phone fa-lg ml-3 col-2 text-center"></i>
-						<input type = "tel" class = "form-control col-7" placeholder = "手机号" name =
+						<input type = "tel" class = "form-control col-8" placeholder = "手机号" name =
 								"phoneNumber" id = "phoneNumber">
 					</div>
 				</div>
@@ -89,8 +88,9 @@
 				<div class = "row  mb-5">
 					<div class = "form-inline form-size">
 						<label for = "captcha"></label>
-						<button id="sendCaptchaBtn" type="button" class="btn col-4 ml-2 mr-2 send_code" onclick="sendCode()">发送验证码</button>
-						<input type = "text" class = "form-control col-5" placeholder = "请输入验证码" name =
+						<button id="sendCaptchaBtn" type="button" class="btn col-4 ml-2 send_code" onclick="sendCode()">发送验证码
+						</button>
+						<input type = "text" class = "form-control col-6" placeholder = "请输入验证码" name =
 								"captcha" id = "captcha">
 					</div>
 				</div>

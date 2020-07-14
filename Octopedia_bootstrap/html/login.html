@@ -3,11 +3,12 @@
 <head>
 	<!--meta tags-->
 	<meta charset = "utf-8">
-	<meta name = "login" content = "width=device-width" initial-scale = 1>
 
 	<!--style-->
 	<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.min.css"/>
 	<link rel = "stylesheet" type = "text/css" href = "../css/login.css"/>
+	<link rel = "stylesheet" type = "text/css" href =
+			"http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<title>章鱼留学</title>
 </head>
@@ -23,11 +24,11 @@
 
 	<!--logo+title-->
 	<div class = "my_title row mx-auto">
-		<div class = "span4 ml-4">
+		<div class = "col-12 text-center">
 			<img src = "../logo_small.png" alt = "" class = "ml-3">
 		</div>
-		<div class = "span4 mt-5">
-			<h1 class = "text-left font-weight-bold">章鱼留学问问</h1>
+		<div class = "col-12 text-center">
+			<h1 class = "font-weight-bold">章鱼留学问问</h1>
 		</div>
 	</div>
 
@@ -52,22 +53,20 @@
 			<form action = "chatbot.html" method = "post">
 				<!--user-->
 				<div class = "row mb-5 mt-2">
-					<div class = "span4 col-1 ml-2">
-						<img src = "../icons/user.svg" alt = "" width = "32" title = "User">
-					</div>
-					<div class = "span4 col-10 ml-2">
-						<input type = "text" class = "form-control" placeholder = "用户名或手机号" name =
+					<div class = "form-inline form-size">
+						<label for = "username"></label>
+						<i class="fa fa-user fa-lg ml-3 col-2 text-center"></i>
+						<input type = "text" class = "form-control col-8" placeholder = "用户名" name =
 								"username" id = "username">
 					</div>
 				</div>
 
 				<!--password-->
 				<div class = "row  mb-5 mt-2">
-					<div class = "span4 col-1 ml-2">
-						<img src = "../icons/password.svg" alt = "" width = "32" title = "Password">
-					</div>
-					<div class = "span4 col-10 ml-2">
-						<input type = "password" class = "form-control" placeholder = "密码" name =
+					<div class = "form-inline form-size">
+						<label for = "password"></label>
+						<i class="fa fa-lock fa-lg ml-3 col-2 text-center"></i>
+						<input type = "password" class = "form-control col-8" placeholder = "密码" name =
 								"password" id = "password">
 					</div>
 				</div>

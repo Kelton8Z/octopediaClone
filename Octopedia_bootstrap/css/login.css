@@ -1,49 +1,48 @@
 body {
     background: rgba(94, 47, 207, 0.1);
     background-size: cover;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .my_title {
-    width: 400px;
-    margin-top: 70px;
+    width: 60vmin;
+    margin-top: 18vh;
 }
 
 .my_login {
-    width: 400px;
+    width: 60vmin;
     margin-top: 10px;
     color: white;
     background: rgba(94, 47, 207, 0.6);
 }
 
 .form-size {
-    width: 400px;
+    width: 60vmin;
 }
 
 input[type="text"], input[type="password"] {
     padding-left: 10px;
 }
+input::-webkit-input-placeholder{
+    font-size: 0.8rem;
+}
 
 h1 {
     color: cadetblue;
     font-family: "Kaiti SC", Arial, fantasy;
+    font-size: 2rem;
 }
 h2{
     font-family: "Kaiti SC", Arial, fantasy;
 }
 
-.title_img {
-    float: left;
-    width: 400px;
-}
 
 .btn-sign-log {
     height: 60px;
-    font-size: 30px;
+    font-size: 1.2rem;
     color: white;
-    width: 120px;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 15vmin;
+    margin-left: 10vmin;
     margin-top: 10px;
     font-family: "Kaiti SC", Arial, fantasy;
 }
@@ -55,7 +54,6 @@ h2{
 .curr_choice {
     border-bottom: solid 2px white;
     padding: 3px;
-    width: 120px;
 }
 
 .btn-submit {
@@ -68,7 +66,7 @@ h2{
 }
 
 .my_footer {
-    font-size: 12px;
+    font-size: 0.8rem;
     width: 100%;
     text-align: center;
     text-decoration-line: underline;
