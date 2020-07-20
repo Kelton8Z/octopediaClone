@@ -21,7 +21,9 @@
 <script type = "text/javascript" src = "../js/jquery.validate.js"></script>
 
 <div class = "container-fluid">
-
+	<div class="back">
+		<button id="back" type="button" class="btn btn-back" onclick="location.href='chatbot.html'">返回主页
+	</div>
 	<!--logo+title-->
 	<div class = "my_title row mx-auto">
 		<div class = "col-12 text-center">
@@ -31,7 +33,6 @@
 			<h1 class = "font-weight-bold">章鱼留学问问</h1>
 		</div>
 	</div>
-
 
 	<div class = "my_login row mx-auto">
 		<div class = "col form-size">
@@ -50,7 +51,7 @@
 			</div>
 
 			<!--"Octopedia_Users.asp" -->
-			<form action = "chatbot.html" method = "post">
+			<form id="login_in_form" onsubmit="return false" action = "#" method = "post">
 				<!--user-->
 				<div class = "row mb-5 mt-2">
 					<div class = "form-inline form-size">
@@ -74,7 +75,7 @@
 				<!--submit-->
 				<div class = "row mb-2">
 					<div class = "mx-auto col">
-						<button id = "loginButton" type = "submit" class = "btn btn-block btn-submit">登录
+						<button id = "loginButton" type = "button" class = "btn btn-block btn-submit" onclick="login()">登录
 						</button>
 					</div>
 				</div>

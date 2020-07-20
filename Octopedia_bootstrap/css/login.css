@@ -4,9 +4,14 @@ body {
     font-size: 1rem;
 }
 
+.back {
+    text-align: right;
+    margin-right: 20px;
+}
+
 .my_title {
     width: 60vmin;
-    margin-top: 18vh;
+    margin-top: 16vh;
 }
 
 .my_login {
@@ -23,7 +28,8 @@ body {
 input[type="text"], input[type="password"] {
     padding-left: 10px;
 }
-input::-webkit-input-placeholder{
+
+input::-webkit-input-placeholder {
     font-size: 0.8rem;
 }
 
@@ -32,7 +38,8 @@ h1 {
     font-family: "Kaiti SC", Arial, fantasy;
     font-size: 2rem;
 }
-h2{
+
+h2 {
     font-family: "Kaiti SC", Arial, fantasy;
 }
 
@@ -65,6 +72,15 @@ h2{
     color: black;
 }
 
+.btn-back {
+    color: blueviolet;
+    font-style: italic;
+}
+
+.btn-back:hover {
+    color: blueviolet;
+}
+
 .my_footer {
     font-size: 0.8rem;
     width: 100%;
@@ -78,7 +94,7 @@ h2{
     color: white;
 }
 
-.send_code{
+.send_code {
     color: white;
     text-decoration-line: underline;
     font-style: oblique;

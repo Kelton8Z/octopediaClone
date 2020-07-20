@@ -24,7 +24,9 @@
 <script type="text/javascript" src="../js/jquery.mockjax.min.js"></script>
 <script type="text/javascript" src="../js/login.js"></script>
 <div class = "container-fluid">
-
+	<div class="back">
+		<button id="back" type="button" class="btn btn-back" onclick="location.href='chatbot.html'">返回主页
+	</div>
 	<!--logo+title-->
 	<div class = "my_title row mx-auto">
 		<div class = "col-12 text-center">
@@ -53,7 +55,7 @@
 			</div>
 
 			<!--"Octopedia_Users.asp" -->
-			<form action = "#" method = "post" id="sign_up_form">
+			<form action = "#" method = "post" id="sign_up_form" onsubmit="return false">
 				<!--user-->
 				<div class = "row mb-4 mt-2">
 					<div class = "form-inline form-size">
@@ -98,7 +100,7 @@
 				<!--submit-->
 				<div class = "row mb-5 mt-5">
 					<div class = "mx-auto col">
-						<button id = "signupButton" type = "submit" class = "btn btn-block btn-submit">注册</button>
+						<button id = "signupButton" type = "button" class = "btn btn-block btn-submit" onclick="signUp()">注册</button>
 					</div>
 				</div>
 			</form>
